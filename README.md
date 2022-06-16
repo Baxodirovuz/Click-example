@@ -69,3 +69,23 @@ Your patches are welcome. Here's our suggested workflow:
 ## Copyright and attribution
 
 Copyright (c) 2016 DataMade. Released under the [MIT License](https://github.com/datamade/your-repo-here/blob/master/LICENSE).
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+         <h1>Click project</h1>
+         
+     </div>
+ </div>
+</body>
+</html>
