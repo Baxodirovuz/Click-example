@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_18">
+    <output url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase/target/test-classes" />
+    <content url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase">
+      <sourceFolder url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../src/main/java/ProjectDataBase/src/main" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Click" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.9.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

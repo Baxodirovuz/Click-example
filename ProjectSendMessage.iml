@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_18">
+    <output url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/target/classes" />
+    <output-test url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/target/test-classes" />
+    <content url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/ProjectSendMessage/src/main" />
+    </content>
+    <orderEntry type="jdk" jdkName="openjdk-18" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.9.0" level="project" />
+    <orderEntry type="library" name="Maven: uz.pdp:DataBase:1.0-SNAPSHOT" level="project" />
+  </component>
+</module>
