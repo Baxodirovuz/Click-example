@@ -10,6 +10,9 @@
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Baxodirovuz)](https://github.com/Baxodirovuz/github-readme-stats)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Baxodirovuz&hide=contribs,prs)
+
+
 ## Setup "for the project"
                *SDK: corretto-18 Oracle OpenJDK version 18.0.1*
                *Language level: 17 - Sealed types,always-strict floating-point semantics*
