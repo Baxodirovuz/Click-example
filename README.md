@@ -12,6 +12,8 @@
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Baxodirovuz&hide=contribs,prs)
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Baxodirovuz&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+
 
 ## Setup "for the project"
                *SDK: corretto-18 Oracle OpenJDK version 18.0.1*
