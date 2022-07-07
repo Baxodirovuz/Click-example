@@ -5,20 +5,15 @@ import idea.Object.Card;
 import idea.Object.User;
 import lombok.SneakyThrows;
 
-/**
- * @author Jaloliddin Baxodirov
- * @Time 2022-06-6/8/2022-3:32 PM-27
- * @Project Lombok-Example
- */
 public class ServiceAdmin extends Controller implements AdminAssistant {
 
-    private static ServiceAdmin serviceAdmin = new ServiceAdmin();
+    private static final ServiceAdmin serviceAdmin = new ServiceAdmin();
 
     public static ServiceAdmin getServiceAdmin() {
         return serviceAdmin;
     }
 
-    public void adminSection(User user,String id) {
+    public void adminSection(User user) {
         println(" <1> Show users");
         println(" <2> Remove users");
         println(" <3> Show plastic");
@@ -65,7 +60,7 @@ public class ServiceAdmin extends Controller implements AdminAssistant {
 
                 }
             }
-            case 3 -> adminSection(user, id);
+            case 3 -> adminSection(user);
             default -> {
                 println("Entered option not found!");
                 println("Try again!");
@@ -92,11 +87,11 @@ public class ServiceAdmin extends Controller implements AdminAssistant {
         print("Enter user id: ");
         String userId = strScanner.nextLine();
         for (int i = 0; i >= userList.size(); i++) {
-            if (userList.get(i).getId().equals(id)) {
+            if (userId.equals(userList.get(i).getId())) {
                 userList.remove(i);
                 Thread.sleep(3000);
                 println("Deletion was performed");
-                adminSection(user, id);
+                adminSection(user);
             } else {
                 printErr("Entered id invalid!");
                 printErr("Try enter!");
@@ -128,12 +123,12 @@ public class ServiceAdmin extends Controller implements AdminAssistant {
         }
         print("Enter option: ");
         String userId = strScanner.nextLine();
-        for (int i = 0; i < userList.size(); i++) {
-            if (userList.get(i).getId().equals(userId)){
+        for (User value : userList) {
+            if (value.getId().equals(userId)) {
                 print("Enter user new first name: ");
-                userList.get(i).setFirstName(strScanner.nextLine());
+                value.setFirstName(strScanner.nextLine());
                 print("Enter user new last name: ");
-                userList.get(i).setLastName(strScanner.nextLine());
+                value.setLastName(strScanner.nextLine());
             }
         }
     }

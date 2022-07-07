@@ -16,17 +16,13 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.UUID;
 
-/**
- * @author Jaloliddin Baxodirov
- * @Time 2022-06-6/8/2022-2:58 PM-50
- * @Project Lombok-Example
- */
+
 public class Controller extends DataBase implements PrintInterface, FindInterface, PlasticNumberRandom {
 
-    private ServiceUser serviceUser = ServiceUser.getServiceUser();
-    private ServiceAdmin serviceAdmin = ServiceAdmin.getServiceAdmin();
+    private final ServiceUser serviceUser = ServiceUser.getServiceUser();
+    private final ServiceAdmin serviceAdmin = ServiceAdmin.getServiceAdmin();
     public String id = "";
-    private User user = new User();
+    private final User user = new User();
 
     @SneakyThrows
     public void menu() {
@@ -67,7 +63,7 @@ public class Controller extends DataBase implements PrintInterface, FindInterfac
         print("Enter password: ");
         user.setPassword(strScanner.nextLine());
         user.setId(UUID.randomUUID().toString());
-        user.setPlasticNumber(Integer.valueOf("8600"+generalReflector()));
+        user.setPlasticNumber("8600"+generalReflector());
         print("Enter plastic password: ");
         user.setPlasticPassword(intScanner.nextInt());
         user.setMoneyWallet(null);
@@ -90,7 +86,7 @@ public class Controller extends DataBase implements PrintInterface, FindInterfac
         if (findUser(username, password)) {
             serviceUser.userSection(user);
         } else if (findAdmin(username, password)) {
-            serviceAdmin.adminSection(user,id);
+            serviceAdmin.adminSection(user);
         } else {
             printErr("This entered username or password invalid");
             printErr("Try again!");
@@ -140,16 +136,14 @@ public class Controller extends DataBase implements PrintInterface, FindInterfac
         if (aStart > aEnd) {
             throw new IllegalArgumentException("Start cannot exceed End.");
         }
-        long range = (long) aEnd - (long) aStart + 1;
-        long randomNumber = (long) (range * aRandom.nextDouble());
-        return randomNumber;
+        long range = aEnd - aStart + 1;
+        return (long) (range * aRandom.nextDouble());
     }
 
     @Override
     public Long generalReflector() {
-        Object
-        long START = 100000000000l;
-        long END = 999999999999l;
+        long START = 100000000000L;
+        long END = 999999999999L;
         Random random = new Random();
         Long num = null;
         for (int idx = 1; idx <= 11; ++idx) {
